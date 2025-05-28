@@ -21,12 +21,15 @@
 </head>
 <body>
   <h2>🔒 Login Admin Panel</h2>
+  <input type="text" id="username" placeholder="Masukkan Username">
   <input type="password" id="pass" placeholder="Masukkan password admin">
   <button onclick="login()">Login</button>
 
   <script>
     function login() {
       const pass = document.getElementById("pass").value;
+      const validUser = "admin123";
+      const validPass = "Joker258@@@";
       if (pass === "Joker258@@@") { // Ganti password di sini
         sessionStorage.setItem("isLoggedIn", true);
         window.location.href = "admin.html";
